@@ -1,0 +1,61 @@
+.contGerenciar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.pesquisar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.pesquisarProjeto{
+    background-color: #30363D;
+    height: 50px;
+    width: 100%;
+    margin: 0 15px 0 0;
+    margin-left: 0;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.criarNovo{
+    display: flex;
+    height: 50px;
+    width: 140px;
+    margin: 0 0 0 10px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(41, 159, 73);
+}
+
+.Lupa{
+    height: 25px;
+    width: 25px;
+    color: white;
+    position: absolute;
+    margin: 0 0 0 15px;
+  }
+
+.projetos-criados{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0 0 0 ;
+    background-color: #30363D;
+    grid-gap: 25px;
+    height: 75vh;
+    padding: 20px 30px 20px 30px;
+    overflow-y: scroll;
+    scroll-behavior:auto;
+    overflow: auto;
+    grid-auto-rows: min-content;
+}
