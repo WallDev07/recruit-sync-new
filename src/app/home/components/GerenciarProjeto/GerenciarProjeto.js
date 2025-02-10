@@ -53,7 +53,7 @@ export default function GerenciarProjeto(){
                     key={p.id_projeto}
                     id={p.id_projeto}
                     /*logo={p.logo ? `/${p.logo}` : '/img-reuniao1.jpeg'}*/
-                    logo={p.logo ? p.logo : '/logo-ifgecomp.jpeg'}
+                    logo={p.logo ? p.logo : '/logo-mandacode.jpeg'}
                     nome={(p.nome)} 
                     coordenador={p.coordenador} 
                     instituicao={p.instituicao} 
