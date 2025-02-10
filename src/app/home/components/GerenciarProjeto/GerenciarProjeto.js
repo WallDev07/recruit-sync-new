@@ -18,7 +18,22 @@ export default function GerenciarProjeto(){
 
     useEffect(() => {
         fetchProjetos();
-    }, [projetos]);
+    }, []); // Removendo o projeto do Array
+
+    //Código para resolver os problemas:
+
+    const handleDelete = async (id) => {
+        const response = await fetch(`/api/projetos/${id}`, {
+            method: 'DELETE'
+        });
+
+        if (response.ok) {
+            setProjetos(projetos.filter(p => p.id_projeto !== id)); // Atualiza o estado após excluir o projeto
+        } else {
+            // Tratar erro na exclusão
+            console.error('Erro ao excluir projeto:', response.status);
+        }
+    };
     
 
     return(
@@ -44,7 +59,8 @@ export default function GerenciarProjeto(){
                     instituicao={p.instituicao} 
                     descricao={p.descricao} 
                     situacao={p.situacao}
-                    onExclude={() => setProjetos([...projetos])}
+                    onExclude={() => handleDelete(p.id_projeto)} // Passa o id para a função handleDelete
+                    /*onExclude={() => setProjetos([...projetos])}*/ // Código antigo
                     /*onExclude={() => setProjetos(projetos.filter(proj => proj.id_projeto !== p.id_projeto))}*/
                     >
               </Projeto>))}
