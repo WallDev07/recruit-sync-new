@@ -12,7 +12,7 @@ export default async function ListaNotificacoes(){
     return(
         <div className='lista-notificacoes'>
             <p>Você possui {quantCandidato.rows[0].count} notificações</p>
-            {candidatos.rows.map( c => (<Notificacao nomeCandidato={c.nome} nomeProjeto={"Mandacode"} ></Notificacao>))}
+            {candidatos.rows.map( c => (<Notificacao nomeCandidato={c.nome} nomeProjeto={"IF - Gecomp"} ></Notificacao>))}
         </div>
     )
 }
