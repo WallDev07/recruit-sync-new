@@ -13,9 +13,7 @@
     flex-direction: column;
     background-color: #30363D;
     border-radius: 20px;
-    height: 75%;
-    width: 75%;
-    margin: 0 100px 0 100px;
+    margin: 50px;
 }
 
 .informacoes{
@@ -23,14 +21,15 @@
     flex-direction: row;
     justify-content: center;
     /*background-color: antiquewhite*/;
-    height: 60%;
+    height: 50%;
     width: 100%;
 }
 
-.etapas{
-    /*background-color: lightblue;*/
-    height: 40%;
+.sect-botao{
+    display: flex;
+    justify-content: end;
     width: 100%;
+    height: 15%;
 }
 
 .sect-img{
@@ -39,8 +38,6 @@
     padding: 50px;
     align-items: center;
     flex-direction: column;
-    width: 75%;
-    height: 100%;
 }
 
 h4{
@@ -90,30 +87,18 @@ textarea{
 .etapas{
     display: flex;
     flex-direction: row;
+    /*background-color: lightblue;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px;
 }
 
-.etapa1, .etapa2, .etapa3, .etapa4{
+.etapa {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
-    height: 100%;
-    width: 100%;
 }
 
-/*
-.etapa1{
-    background-color: lightgreen;
-}
-
-.etapa2{
-    background-color: lightskyblue;
-}
-
-.etapa3{
-    background-color: lightgoldenrodyellow;
-}
-*/
 
 .titulos-etapas{
     display: flex;
@@ -122,8 +107,9 @@ textarea{
 }
 
 .text-lab{
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 0 0 10px;
+    white-space: nowrap;
 }
 
 .link-prova{
@@ -131,7 +117,7 @@ textarea{
     border-radius: 10px;
     border: 1px solid black;
     height: 40px;
-    width: 180px;
+    width: 250px;
     padding: 10px;
     font-size: 15px;
     color: black;
@@ -143,7 +129,7 @@ textarea{
     border-radius: 10px;
     border: 1px solid black;
     height: 40px;
-    width: 180px;
+    width: 250px;
     padding: 10px;
     font-size: 15px;
     color: black;
@@ -155,7 +141,7 @@ textarea{
     border-radius: 10px;
     border: 1px solid black;
     height: 40px;
-    width: 180px;
+    width: 250px;
     padding: 10px;
     font-size: 15px;
     color: black;
@@ -170,9 +156,10 @@ textarea{
     margin: 25px 0 20px 0;
 }
 
-.sect-botao{
+.opcoes-analise > div {
     display: flex;
-    justify-content: end;
+    flex-wrap: nowrap;
+    margin-top: 10px;
 }
 
 .criar-projeto{
@@ -221,4 +208,309 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/*Responsividade:*/
+
+/* Estilos para desktops médios (telas de 1280px a 1440px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    
+    .container-criar{
+        height: 95%;
+    }
+
+    .sect-img{
+        padding: 35px;
+        width: 75%;
+        height: 100%;
+    }
+    
+    .sect-inputs{
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sect-desc{
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+    }
+
+    textarea{
+        padding: 15px;
+        font-size: 15px;
+        width: 100%;
+        margin: 15px 15px 15px 15px;
+        height: 120px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    .image-upload {
+        width: 135px;
+        height: 135px;
+    }
+
+    .inputs{
+        height: 40px;
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+        margin: 15px 0 5px 0;
+    }
+
+    .titulos-etapas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .sect-botao{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .criar-projeto{
+        font-size: 17px;
+        height: 45px;
+        width: 140px;
+        margin: 30px;
+    }
+
+    .link-prova{
+        height: 38px;
+        width: 230px;
+        padding: 10px;
+        font-size: 14px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .dinamica-grupo{
+        height: 38px;
+        width: 230px;
+        padding: 10px;
+        font-size: 14px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .texto-entrevista{
+        height: 38px;
+        width: 230px;
+        padding: 10px;
+        font-size: 14px;
+        margin: 25px 0 20px 0;
+    }
+}
+    
+/* Estilos para tablets grandes e laptops pequenos (1024px a 1280px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container-criar{
+        height: 85%;
+    }
+
+    .sect-img{
+        padding: 25px;
+        width: 75%;
+        height: 100%;
+    }
+    
+    .sect-inputs{
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sect-desc{
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+    }
+
+    textarea{
+        padding: 13px;
+        font-size: 15px;
+        width: 100%;
+        margin: 15px 15px 15px 15px;
+        height: 120px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    .image-upload {
+        width: 128px;
+        height: 128px;
+    }
+
+    .inputs{
+        height: 37px;
+        width: 100%;
+        padding: 13px;
+        font-size: 14px;
+        margin: 15px 0 5px 0;
+    }
+
+    #op1, #op2{
+        display: flex;
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .titulos-etapas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .sect-botao{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .criar-projeto{
+        font-size: 15px;
+        height: 43px;
+        width: 135px;
+        margin: 30px;
+    }
+
+
+    .link-prova{
+        height: 38px;
+        width: 210px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .dinamica-grupo{
+        height: 38px;
+        width: 210px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .texto-entrevista{
+        height: 38px;
+        width: 210px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
+}
+
+@media (max-width: 992px){
+
+    .informacoes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 50%;
+        width: 100%;
+    }
+
+    .container-criar{
+        height: 85%;
+    }
+
+    .sect-img{
+        padding: 25px;
+    }
+    
+    .sect-inputs{
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sect-desc{
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+    }
+
+    textarea{
+        padding: 13px;
+        font-size: 15px;
+        width: 100%;
+        margin: 15px 15px 15px 15px;
+        height: 120px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    .image-upload {
+        width: 128px;
+        height: 128px;
+    }
+
+    .inputs{
+        height: 37px;
+        width: 100%;
+        padding: 13px;
+        font-size: 14px;
+        margin: 15px 0 5px 0;
+    }
+
+    #op1, #op2{
+        display: flex;
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .titulos-etapas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .sect-botao{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .criar-projeto{
+        font-size: 15px;
+        height: 43px;
+        width: 135px;
+        margin: 30px;
+    }
+
+
+    .link-prova{
+        height: 38px;
+        width: 190px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .dinamica-grupo{
+        height: 38px;
+        width: 190px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
+    
+    .texto-entrevista{
+        height: 38px;
+        width: 190px;
+        padding: 10px;
+        font-size: 13px;
+        margin: 25px 0 20px 0;
+    }
 }

@@ -83,7 +83,7 @@ const handleSubmit = (e) => {
   
  return(
         <div className='container-criar'>
-
+  
             <form className='formulario-criacao' onSubmit={handleSubmit}>
               
                 <section className='informacoes'>
@@ -168,7 +168,7 @@ const handleSubmit = (e) => {
                     </section>
                 </section>
                 <section className='etapas'>
-                    <section className='etapa1'>
+                    <section className='etapa'>
                         <h4 className='titulos-etapas'>Análise curricular</h4>
                         <section className='opcoes-analise'>
                              <div>
@@ -197,7 +197,7 @@ const handleSubmit = (e) => {
                         </section>
                     </section>
 
-                    <section className='etapa2'>
+                    <section className='etapa'>
                         <h4 className='titulos-etapas'>Prova de seleção</h4>
                         <input
                             id='linkProva'
@@ -210,7 +210,7 @@ const handleSubmit = (e) => {
                         ></input>
                     </section>
 
-                    <section className='etapa3'>
+                    <section className='etapa'>
                         <h4 className='titulos-etapas'>Dinâmica de grupo</h4>
                         <input
                             id='dinamicaGrupo'
@@ -223,7 +223,7 @@ const handleSubmit = (e) => {
                         ></input>
                     </section>
 
-                    <section className='etapa4'>
+                    <section className='etapa'>
                         <h4 className='titulos-etapas'>Entrevista de seleção</h4>
                         <input 
                             id='textoEntrevista'
@@ -241,6 +241,7 @@ const handleSubmit = (e) => {
                    <button type="submit" className='criar-projeto'>Criar Projeto</button>
                 </section>
             </form>
+           
         </div>
     )
 }
